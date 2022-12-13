@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stripe Applicant</title>
+    <style>
+        .formBox{
+            padding: 0.5rem 2rem;
+        }
+        .button{
+          background-color: light-gray;
+          border-color: blue;
+          border-radius: 8px;
+          color: blue;
+          font-weight: 900; 
+          margin: 2px; 
+          padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+  <script src="script.js"> </script>
+    <form>
+      <h1 style="color:blue">Applicant Form</h1>
+        <div class="formBox">
+            <label for="full_name_aliases">Full Name_Aliases:</label>
+            <input type="text" id="full_name_aliases" placeholder="full name & aliases" size="40"/>
+        </div>
+        <div class="formBox">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="email" size="40"/>
+        </div>
+        
+        <div class="formBox">
+          <label for="rep_phone">Applicant's Phone:</label>
+          <input type="text" id="rep_phone" placeholder="applicant's phone" size="11"/>
+        </div>
+        <div class="formBox">
+          <label for="nationality">Nationality:</label>
+          <input type="text" id="nationality" placeholder="nationality" size="20"/>
+        </div>
+        <div class="formBox">
+          <label for="relationship_title">Job Title:</label>
+          <input type="text" id="relationship_title" placeholder="job title" size="20"/>
+        </div>
+        <div class="formBox">
+          <button class="button" id="btn">Save</button>
+      </div>
+
+        <button class="button" onclick="hider"><a href="https://fssjcapital.blogspot.com/p/who-can-apply.html" rel='noopener noreferrer' target='_blank'>Myinfo via Singpass</a></button>
+               <div id="msg">
+            <pre></pre>
+        </div>
+    </form>
